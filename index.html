@@ -29,10 +29,10 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar"></ul>
+        <div id="test"><ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar"></ul></div>
         <script type="text/javascript">
         	$.get("./tpl/navigation.tpl", function(result){      
-		      $("#accordionSidebar").html(result);
+		      $("#test").html(result);
 					});
 		    </script>
         <!-- End of Sidebar -->
