@@ -101,11 +101,7 @@
 
 					<!-- Heading -->
 					<div class="sidebar-heading" id="test"></div>
-					<script type="text/javascript">
-						$.get("./tpl/header.tpl", function(result){      
-			      $("#test").html(result);
-						});
-					</script>
+
 
 					<!-- Nav Item - Pages Collapse Menu -->
 					<li class="nav-item">
@@ -540,6 +536,11 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
+		<script type="text/javascript">
+			$.get("./tpl/header.tpl", function(result){      
+      $("#test").html(result);
+			});
+		</script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
