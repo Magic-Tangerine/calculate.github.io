@@ -10,7 +10,7 @@
 
                     <!-- Nav Item - Dashboard -->
                     <li class="nav-item active">
-                        <a class="nav-link" href="#/index">
+                        <a class="nav-link" href="index.html">
                             <i class="fas fa-fw fa-tachometer-alt"></i>
                             <span>首页</span></a>
                     </li>
@@ -33,9 +33,9 @@
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
                                 <h6 class="collapse-header">还款方式</h6>
-                                <a class="collapse-item" href="#/calculate">等额本息</a>
+                                <a class="collapse-item" href="calculate.html">等额本息</a>
 
-                                <a class="collapse-item" href="#/calculate">等额本金</a>
+                                <a class="collapse-item" href="calculate.html">等额本金</a>
                             </div>
                         </div>
                     </li>
