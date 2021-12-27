@@ -19,7 +19,10 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>    
+    <script type="text/javascript" src='/js/ejs.js'></script>
+    <script type="text/javascript" src='/js/director.js'></script>
+    <script type="text/javascript" src='/js/main.js'></script>
 
 </head>
 
@@ -53,13 +56,48 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid" id="index"></div>
+                <div class="container-fluid" id="main"></div>
                 <!-- /.container-fluid -->
                 <script>
 									$.get("./tpl/index.tpl", function(result){      
-									      $("#index").html(result);
+									      $("#main").html(result);
 									});
 								</script>
+								<script type="text/javascript">
+
+								    // 客户端路由库，方便处理对hash的监听和解析 https://github.com/flatiron/director    
+								    // https://www.cnblogs.com/Showshare/p/director-chinese-tutorial.html
+								    var routes = {      
+								      '/': home,
+								      '/index': index,
+								      '/calculate': calculate,
+								    };
+
+								    var router = Router(routes).configure({strict:false});
+								    router.init();
+
+
+								    //  `index.html#/posts/2`这样的客户端路由被分享或收藏时，也会触发载入首页，导致home()被执行 ，此处排除这种状况
+								    if(location.hash == '' ){ home() }      
+
+								    
+								    function home(){
+								      index()     
+								    }
+
+								    function index(){
+								      renderTemplate_s('#main', 'index');     
+								    }
+
+								    function calculate(){
+								      renderTemplate_s('#main','calculate');
+								    }
+
+								    function notfound(){
+								      alert('404')
+								    }
+
+								  </script>
             </div>
 
 
