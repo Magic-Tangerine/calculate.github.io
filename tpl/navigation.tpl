@@ -79,7 +79,7 @@
                         </a>
                         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
-                                <a class="collapse-item" href="login.html">最新资讯</a>
+                                <a class="collapse-item" href="#/article">最新资讯</a>
                                 <a class="collapse-item" href="register.html">新车</a>
                                 <a class="collapse-item" href="forgot-password.html">试驾</a>
                                 <div class="collapse-divider"></div>
