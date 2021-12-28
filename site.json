@@ -9,10 +9,10 @@
 }
 =======
 {
-  "ProjectName": "JSON测试",
-  "Introduce": "买车网",
+  "ProjectName": "买车网",
+  "Introduce": "为用户买车提供意见",
   "GitStar": "6",
-  "UpdatedTime": "2021-11-30",
+  "UpdatedTime": "2021-12-27",
   "Functionary": "吴优",
   "GitAdress": "https://magic-tangerine.github.io/calculator.github.io/"
 }
