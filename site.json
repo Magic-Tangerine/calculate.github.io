@@ -1,19 +1,8 @@
-<<<<<<< HEAD
 {
-  "ProjectName": "JSON测试",
-  "Introduce": "这是一个JSON测试项目，用于测试JSON数据的读取",
-  "GitStar": "6",
-  "UpdatedTime": "2021-11-30",
-  "Functionary": "吴优",
-  "GitAdress": "null"
+    "ProjectName": "买车网",
+    "Introduce": "为用户买车提供建议",
+    "GitStar": "5",
+    "UpdatedTime": "2021-12-26",
+    "Functionary": "吴优",
+    "GitAdress": "https://github.com/Magic-Tangerine/calculator.github.io/"
 }
-=======
-{
-  "ProjectName": "买车网",
-  "Introduce": "为用户买车提供意见",
-  "GitStar": "6",
-  "UpdatedTime": "2021-12-27",
-  "Functionary": "吴优",
-  "GitAdress": "https://magic-tangerine.github.io/calculator.github.io/"
-}
->>>>>>> 26f6e5a537602a762ce139d0af6e85a8464d5807
