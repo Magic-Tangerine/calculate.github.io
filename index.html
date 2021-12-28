@@ -64,50 +64,7 @@
                     $.get("./tpl/index.tpl", function(result){      
                           $("#main").html(result);
                     });
-                </script>
-								
-
-                                <script type="text/javascript">
-
-								    // 客户端路由库，方便处理对hash的监听和解析 https://github.com/flatiron/director    
-								    // https://www.cnblogs.com/Showshare/p/director-chinese-tutorial.html
-								    var routes = {      
-								      '/': home,
-								      '/index': index,
-								      // '/test': test,
-								      '/calculate': calculate
-								    };
-
-								    var router = Router(routes).configure({strict:false});
-								    router.init();
-
-
-								    //  `index.html#/posts/2`这样的客户端路由被分享或收藏时，也会触发载入首页，导致home()被执行 ，此处排除这种状况
-								    if(location.hash == '' ){ home() }      
-
-								    
-								    function home(){
-								      index()     
-								    }
-
-								    function index(){
-								      renderTemplate_s('#main', 'index')    
-								    }
-
-								    function calculate(){
-								      renderTemplate_s('#main','calculate')
-								    }
-
-								    function test(){
-								      renderTemplate_s('#main','test')
-								    }
-								    
-								    function notfound(){
-								      alert('404')
-								    }
-
-								  </script>
-                                  
+                </script>    
             </div>
 
 
