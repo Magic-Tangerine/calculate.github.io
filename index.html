@@ -19,11 +19,11 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>    
-    <script type="text/javascript" src='/js/ejs.js'></script>
-    <script type="text/javascript" src='/js/director.js'></script>
-    <script type="text/javascript" src='/js/main.js'></script>
+    <script type="text/javascript" src='./js/ejs.js'></script>
+    <script type="text/javascript" src='./js/director.js'></script>
+    <script type="text/javascript" src='./js/main.js'></script>
 
 </head>
 
@@ -59,11 +59,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid" id="main"></div>
                 <!-- /.container-fluid -->
-                <script>
-									$.get("./tpl/index.tpl", function(result){      
-									      $("#main").html(result);
-									});
-								</script>
+
 								<script type="text/javascript">
 
 								    // 客户端路由库，方便处理对hash的监听和解析 https://github.com/flatiron/director    
